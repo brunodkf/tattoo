@@ -52,7 +52,7 @@ export default {
           left: 0,
           width: '100%',
           height: '100%',
-          opacity: '.8',
+          opacity: '.7',
           backgroundColor: 'black', 
           zIndex: 1,
         },
