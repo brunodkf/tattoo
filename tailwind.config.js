@@ -21,7 +21,7 @@ export default {
           coverTrailer: '#00000021',
         },
         cinza: {
-          escuro: '#41494F',
+          escuro: '#191919',
           claro: '#6D7C83',
           transparente: '#6d7c837c'
         }
@@ -30,7 +30,7 @@ export default {
         'custom-tab': { 'raw': '(max-width: 1100px) and (min-height: 1000px)' },
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
         gotham: ['Gotham', "sans-serif"],
         gothamBold: ['Gotham-Bold', "sans-serif"],
         mantika: ['Mantika-Regular', "sans-serif"],
@@ -38,6 +38,13 @@ export default {
     },
   },
   plugins: [
+    plugin(function({ addBase, theme }) {
+      addBase({
+        'h1': { fontSize: theme('fontSize.3xl') },
+        'h2': { fontSize: theme('fontSize.2xl') },
+        'h3': { fontSize: theme('fontSize.xl') },
+      })
+    }),
     plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.before-overlay': {
