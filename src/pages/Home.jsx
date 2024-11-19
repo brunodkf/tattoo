@@ -3,12 +3,15 @@ import Banner from '../components/Banner'
 
 const Home = () => {
   return (
-    <section className='w-screen h-screen text-4xl font-inter bg-preto-escuro
-    '>
-
+    <div className='bg-preto-escuro font-inter'>
 
       <Banner />
-    </section>
+
+
+      <section className='w-screen h-screen relative flex items-center bg-center bg-no-repeat bg-cover before-overlay' >
+
+      </section>
+    </div>
   )
 }
 
