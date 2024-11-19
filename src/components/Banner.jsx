@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerBG from '/BannerBG.png'
+import BannerBG from '/bg2.webp'
 import Hero from '/Hero.webp'
 
 
