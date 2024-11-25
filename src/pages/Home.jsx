@@ -51,8 +51,8 @@ const Home = () => {
           <div className="carrousel h-1/2 w-full" >
             <Swiper className='h-full' modules={[Autoplay]} spaceBetween={30} slidesPerView={1} loop={true} autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, }} speed={3000} freeMode={true}>
 
-              <SwiperSlide className='bg-preto-transparente px-4 rounded-lg overflow-hidden '>
-                <div className="w-full h-full bg-black text-white
+              <SwiperSlide className='px-4 rounded-lg overflow-hidden '>
+                <div className="w-full h-full bg-black text-white rounded-md
                 flex flex-col justify-center items-center gap-6 ">
 
                   <BsArrowThroughHeartFill className='text-6xl text-vermelho-claro' />
