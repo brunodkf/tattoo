@@ -5,7 +5,7 @@ import Logo from '/logo_tattoo.webp'
 
 export const Navbar = () => {
   return (
-    <nav className='w-screen p-2 absolute top-0 z-50'>
+    <nav className='w-full p-2 absolute top-0 z-50'>
       <div className="container m-auto flex items-center justify-between">
         <img className='max-w-28' src={Logo} alt="Logo" />
 

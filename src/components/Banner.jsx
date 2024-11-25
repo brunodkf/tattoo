@@ -5,7 +5,7 @@ import Hero from '/Hero.webp'
 
 const Banner = () => {
   return (
-    <section className='w-screen h-screen font-montserrat relative flex items-center bg-center bg-no-repeat bg-cover before-overlay' style={{ backgroundImage: `url(${BannerBG})` }}>
+    <section className='w-full h-screen font-montserrat relative flex items-center bg-center bg-no-repeat bg-cover before-overlay' style={{ backgroundImage: `url(${BannerBG})` }}>
       <div className="container relative z-50 m-auto flex items-center justify-center">
 
         <div className="flex flex-col items-center justify-between">
