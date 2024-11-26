@@ -49,16 +49,71 @@ const Home = () => {
           </div>
 
           <div className="carrousel h-1/2 w-full" >
-            <Swiper className='h-full' modules={[Autoplay]} spaceBetween={30} slidesPerView={1} loop={true} autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, }} speed={3000} freeMode={true}>
+            <Swiper className='h-full' modules={[Autoplay, Pagination]} 
+            pagination={{ clickable: true}} style={{
+              "--swiper-pagination-bottom" : "0px",
+               "--swiper-pagination-color": "#ff0400",
+               "--swiper-pagination-bullet-inactive-color": "#6d7c837c",
+               "--swiper-pagination-bullet-inactive-opacity": "1",
+               "--swiper-pagination-bullet-size": "12px",
+               "--swiper-pagination-bullet-horizontal-gap": "6px",
+            }}
+            spaceBetween={30} slidesPerView={1} loop={true} autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true, }} 
+            speed={3000} freeMode={true}>
 
               <SwiperSlide className='px-4 rounded-lg overflow-hidden '>
-                <div className="w-full h-full bg-black text-white rounded-md
+                <div className="w-full h-5/6 bg-black text-white rounded-md
                 flex flex-col justify-center items-center gap-6 ">
 
                   <BsArrowThroughHeartFill className='text-6xl text-vermelho-claro' />
                   <h3 className='font-gotham uppercase tracking-wider'>Tatuagem</h3>
-                  <p>
+                  <p className='text-cinza-claro'>
                     Arte personalizada, feita por artistas que entendem sua visão.
+                  </p>
+
+                  <a href="#" className=' bg-vermelho-escuro tracking-wider text-sm text-white uppercase text-center px-4 py-2 mt-6 rounded-md'>
+                    Saiba mais
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className='px-4 rounded-lg overflow-hidden '>
+                <div className="w-full  h-5/6 bg-black text-white rounded-md
+                flex flex-col justify-center items-center gap-6 ">
+
+                  <FaEarDeaf className='text-6xl text-vermelho-claro' />
+                  <h3 className='font-gotham uppercase tracking-wider'>Piercing</h3>
+                  <p className='text-cinza-claro'>
+                  Escolha a joia, nós cuidamos do resto. Segurança e estilo garantidos.
+                  </p>
+
+                  <a href="#" className=' bg-vermelho-escuro tracking-wider text-sm text-white uppercase text-center px-4 py-2 mt-6 rounded-md'>
+                    Saiba mais
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className='px-4 rounded-lg overflow-hidden '>
+                <div className="w-full  h-5/6 bg-black text-white rounded-md
+                flex flex-col justify-center items-center gap-6 ">
+
+                  <GiSpikedDragonHead className='text-6xl text-vermelho-claro' />
+                  <h3 className='font-gotham uppercase tracking-wider'>Cobertura</h3>
+                  <p className='text-cinza-claro'>
+                  Não importa o tamanho ou a cor, criamos um novo design que se adapta perfeitamente.
+                  </p>
+
+                  <a href="#" className=' bg-vermelho-escuro tracking-wider text-sm text-white uppercase text-center px-4 py-2 mt-6 rounded-md'>
+                    Saiba mais
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className='px-4 rounded-lg overflow-hidden '>
+                <div className="w-full  h-5/6 bg-black text-white rounded-md
+                flex flex-col justify-center items-center gap-6 ">
+
+                  <GiLaserBlast className='text-6xl text-vermelho-claro' />
+                  <h3 className='font-gotham uppercase tracking-wider'>Remoção</h3>
+                  <p className='text-cinza-claro'>
+                  Preparando sua pele para um novo design ou para deixá-la livre novamente.
                   </p>
 
                   <a href="#" className=' bg-vermelho-escuro tracking-wider text-sm text-white uppercase text-center px-4 py-2 mt-6 rounded-md'>
